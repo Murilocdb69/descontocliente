@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto de loja</title>
+</head>
+<body>
+    <h1>Seu desconto:</h1>
+    <div id="pergunta"></div>
+    <script>
+        let pergunta = prompt("Você é cliente de nossa loja? \n 1-Sim \n 2-Não")
+        let resposta = ""
+        if (pergunta == 1){ 
+                resposta=("10% de desconto")
+        }else{
+                resposta=("5% de desconto")    
+            }
+        document.getElementById("pergunta").innerHTML=resposta
+    </script>
+</body>
+</html>
